@@ -1,5 +1,5 @@
 # Richard | Soluções em Tecnologia
 
-Versão clara e simplificada da landing page, pensada para um público mais maduro.
+Versão corporativa clara, com linguagem técnica e apresentação profissional.
 
 Arquivo principal: `index.html`
