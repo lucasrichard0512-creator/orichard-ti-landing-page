@@ -1,5 +1,5 @@
 # Richard | Soluções em Tecnologia
 
-Versão corporativa clara, com linguagem técnica e apresentação profissional.
+Versão corporativa com a copy da versão final aprovada.
 
 Arquivo principal: `index.html`
