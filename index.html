@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Soluções em redes, infraestrutura, sistemas sob medida e suporte help desk para empresas em São Miguel do Araguaia e região." />
+  <meta name="description" content="Richard atua com redes, infraestrutura, suporte técnico, segurança eletrônica e desenvolvimento de sistemas sob medida para empresas." />
   <meta name="theme-color" content="#10131a" />
   <meta property="og:title" content="Richard | Soluções em Tecnologia" />
-  <meta property="og:description" content="Redes, infraestrutura, sistemas sob medida e suporte técnico para empresas." />
+  <meta property="og:description" content="Experiência prática em redes, suporte e desenvolvimento de soluções para empresas." />
   <meta property="og:type" content="website" />
   <title>Richard | Soluções em Tecnologia</title>
 
@@ -15,20 +15,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-
   <script>
     tailwind.config = {
       darkMode: 'class',
       theme: {
         extend: {
           colors: {
-            background: '#10131a',
-            surface: '#151922',
-            card: '#1d2430',
-            card2: '#202938',
-            line: '#334155',
-            muted: '#b7c1d1',
-            primary: '#3b82f6',
+            background: '#10131a', surface: '#151922', card: '#1d2430',
+            line: '#334155', muted: '#b7c1d1', primary: '#3b82f6',
             primarySoft: '#9ec5ff'
           },
           maxWidth: { page: '1180px' },
@@ -37,268 +31,190 @@
       }
     }
   </script>
-
   <style>
     html { scroll-behavior: smooth; }
     body { font-family: Inter, sans-serif; background: #10131a; }
-    .glass { background: rgba(29, 36, 48, .78); backdrop-filter: blur(14px); border: 1px solid rgba(71, 85, 105, .55); }
-    .grid-bg { background-image: linear-gradient(rgba(59,130,246,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,.06) 1px, transparent 1px); background-size: 38px 38px; }
-    .glow { box-shadow: 0 0 80px rgba(59,130,246,.18); }
-    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 450, 'GRAD' 0, 'opsz' 24; }
-    details > summary::-webkit-details-marker { display: none; }
-    section { scroll-margin-top: 92px; }
+    .glass { background: rgba(29,36,48,.78); backdrop-filter: blur(14px); border:1px solid rgba(71,85,105,.55); }
+    .grid-bg { background-image:linear-gradient(rgba(59,130,246,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.06) 1px,transparent 1px); background-size:38px 38px; }
+    .glow { box-shadow:0 0 80px rgba(59,130,246,.18); }
+    .material-symbols-outlined { font-variation-settings:'FILL' 0,'wght' 450,'GRAD' 0,'opsz' 24; }
+    details > summary::-webkit-details-marker { display:none; }
+    section { scroll-margin-top:92px; }
+    .project-shot { transition: transform .35s ease, border-color .35s ease; }
+    .project-shot:hover { transform: translateY(-4px); border-color: rgba(96,165,250,.65); }
   </style>
 </head>
 <body class="bg-background text-white antialiased">
-  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-background/90 backdrop-blur-xl">
-    <div class="mx-auto flex max-w-page items-center justify-between px-5 py-4 lg:px-8">
-      <a href="#inicio" class="flex min-w-0 items-center gap-3" aria-label="Ir para o início">
-        <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/15 text-primarySoft">
-          <span class="material-symbols-outlined">terminal</span>
-        </span>
-        <span class="truncate text-base font-bold sm:text-lg">Richard <span class="hidden text-muted sm:inline">| Soluções em Tecnologia</span></span>
-      </a>
-
-      <nav class="hidden items-center gap-7 md:flex" aria-label="Navegação principal">
-        <a href="#servicos" class="text-sm font-medium text-muted transition hover:text-white">Serviços</a>
-        <a href="#projeto" class="text-sm font-medium text-muted transition hover:text-white">Projeto</a>
-        <a href="#sobre" class="text-sm font-medium text-muted transition hover:text-white">Sobre</a>
-        <a href="#faq" class="text-sm font-medium text-muted transition hover:text-white">Dúvidas</a>
-        <a data-whatsapp class="rounded-lg bg-primary px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-500" href="#">Falar no WhatsApp</a>
-      </nav>
-
-      <button id="mobile-menu-btn" class="rounded-lg p-2 text-white md:hidden" aria-label="Abrir menu" aria-expanded="false">
-        <span class="material-symbols-outlined">menu</span>
-      </button>
-    </div>
-  </header>
-
-  <div id="mobile-menu" class="fixed inset-0 z-[60] hidden bg-background/98 px-6 py-8 backdrop-blur-xl md:hidden">
-    <div class="flex justify-end">
-      <button id="close-menu-btn" class="rounded-lg p-2" aria-label="Fechar menu"><span class="material-symbols-outlined text-3xl">close</span></button>
-    </div>
-    <nav class="mt-16 flex flex-col items-center gap-8 text-xl font-semibold">
-      <a href="#servicos">Serviços</a>
-      <a href="#projeto">Projeto</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#faq">Dúvidas</a>
-      <a data-whatsapp href="#" class="mt-3 rounded-xl bg-primary px-7 py-4 text-base">Falar no WhatsApp</a>
+<header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-background/90 backdrop-blur-xl">
+  <div class="mx-auto flex max-w-page items-center justify-between px-5 py-4 lg:px-8">
+    <a href="#inicio" class="flex min-w-0 items-center gap-3">
+      <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/15 text-primarySoft"><span class="material-symbols-outlined">terminal</span></span>
+      <span class="truncate text-base font-bold sm:text-lg">Richard <span class="hidden text-muted sm:inline">| Soluções em Tecnologia</span></span>
+    </a>
+    <nav class="hidden items-center gap-7 md:flex">
+      <a href="#trajetoria" class="text-sm font-medium text-muted hover:text-white">Trajetória</a>
+      <a href="#servicos" class="text-sm font-medium text-muted hover:text-white">Serviços</a>
+      <a href="#projeto" class="text-sm font-medium text-muted hover:text-white">Projeto</a>
+      <a data-whatsapp href="#" class="rounded-lg bg-primary px-5 py-3 text-sm font-semibold hover:bg-blue-500">Falar no WhatsApp</a>
     </nav>
+    <button id="mobile-menu-btn" class="rounded-lg p-2 md:hidden" aria-label="Abrir menu"><span class="material-symbols-outlined">menu</span></button>
+  </div>
+</header>
+
+<div id="mobile-menu" class="fixed inset-0 z-[60] hidden bg-background/98 px-6 py-8 backdrop-blur-xl md:hidden">
+  <div class="flex justify-end"><button id="close-menu-btn" class="rounded-lg p-2"><span class="material-symbols-outlined text-3xl">close</span></button></div>
+  <nav class="mt-16 flex flex-col items-center gap-8 text-xl font-semibold">
+    <a href="#trajetoria">Trajetória</a><a href="#servicos">Serviços</a><a href="#projeto">Projeto</a>
+    <a data-whatsapp href="#" class="rounded-xl bg-primary px-7 py-4 text-base">Falar no WhatsApp</a>
+  </nav>
+</div>
+
+<main id="inicio" class="pt-20">
+<section class="relative overflow-hidden border-b border-white/5 grid-bg">
+  <div class="absolute left-1/2 top-20 h-72 w-72 -translate-x-1/2 rounded-full bg-primary/20 blur-[120px]"></div>
+  <div class="relative mx-auto grid max-w-page items-center gap-12 px-5 py-20 lg:grid-cols-[1.05fr_.95fr] lg:px-8 lg:py-28">
+    <div>
+      <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-4 py-2 text-sm font-medium text-primarySoft">
+        <span class="material-symbols-outlined text-lg">location_on</span> São Miguel do Araguaia – GO e região
+      </div>
+      <h1 class="max-w-3xl text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
+        Transformo problemas em soluções através da <span class="text-primarySoft">tecnologia.</span>
+      </h1>
+      <p class="mt-7 max-w-2xl text-lg leading-8 text-muted">
+        Experiência prática em infraestrutura, redes, suporte técnico, segurança eletrônica e desenvolvimento de sistemas para empresas.
+      </p>
+      <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+        <a data-whatsapp href="#" class="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-7 py-4 font-semibold hover:bg-blue-500">
+          <span class="material-symbols-outlined">chat</span> Solicitar atendimento
+        </a>
+        <a href="#trajetoria" class="inline-flex items-center justify-center gap-2 rounded-xl border border-line px-7 py-4 font-semibold hover:bg-white/5">
+          Conhecer minha trajetória <span class="material-symbols-outlined">arrow_downward</span>
+        </a>
+      </div>
+    </div>
+    <div class="glass glow rounded-3xl p-6 sm:p-8">
+      <p class="text-sm font-bold uppercase tracking-[.18em] text-primarySoft">Áreas de atuação</p>
+      <div class="mt-6 space-y-4">
+        <div class="rounded-xl border border-primary/20 bg-primary/10 p-4"><div class="flex gap-3"><span class="material-symbols-outlined text-primarySoft">lan</span><div><p class="font-semibold">Redes e infraestrutura</p><p class="mt-1 text-sm text-muted">Da estrutura física à configuração dos equipamentos.</p></div></div></div>
+        <div class="rounded-xl border border-white/10 bg-white/[.03] p-4"><div class="flex gap-3"><span class="material-symbols-outlined text-primarySoft">support_agent</span><div><p class="font-semibold">Suporte e help desk</p><p class="mt-1 text-sm text-muted">Resolução de falhas e apoio ao usuário.</p></div></div></div>
+        <div class="rounded-xl border border-white/10 bg-white/[.03] p-4"><div class="flex gap-3"><span class="material-symbols-outlined text-primarySoft">code_blocks</span><div><p class="font-semibold">Sistemas sob medida</p><p class="mt-1 text-sm text-muted">Ferramentas criadas para necessidades reais.</p></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="trajetoria" class="mx-auto max-w-page px-5 py-20 lg:px-8 lg:py-24">
+  <div class="max-w-3xl">
+    <p class="text-sm font-bold uppercase tracking-[.18em] text-primarySoft">Quem sou eu</p>
+    <h2 class="mt-4 text-3xl font-bold sm:text-4xl">Uma trajetória construída na prática.</h2>
+    <p class="mt-5 text-lg leading-8 text-muted">
+      Sou Richard, profissional de tecnologia. Minha experiência passa pela manutenção de smartphones, segurança eletrônica, infraestrutura, suporte de TI e desenvolvimento de sistemas para empresas.
+    </p>
+  </div>
+  <div class="mt-12 grid gap-5 md:grid-cols-2">
+    <article class="glass rounded-2xl p-7"><span class="material-symbols-outlined text-4xl text-primarySoft">smartphone</span><h3 class="mt-5 text-xl font-bold">Técnico de smartphones</h3><p class="mt-3 leading-7 text-muted">Experiência com diagnóstico, manutenção e resolução de falhas em dispositivos móveis.</p></article>
+    <article class="glass rounded-2xl p-7"><span class="material-symbols-outlined text-4xl text-primarySoft">shield</span><h3 class="mt-5 text-xl font-bold">3 anos na SoSafe</h3><p class="mt-3 leading-7 text-muted">Atuação como técnico de segurança eletrônica e auxiliar de TI, lidando com infraestrutura, equipamentos, redes e suporte no ambiente empresarial.</p></article>
+    <article class="glass rounded-2xl p-7"><span class="material-symbols-outlined text-4xl text-primarySoft">school</span><h3 class="mt-5 text-xl font-bold">Formação em tecnologia</h3><p class="mt-3 leading-7 text-muted">Graduação em Redes de Computadores e Segurança da Informação, aprofundando conhecimentos em infraestrutura e proteção de ambientes digitais.</p></article>
+    <article class="glass rounded-2xl p-7"><span class="material-symbols-outlined text-4xl text-primarySoft">developer_mode</span><h3 class="mt-5 text-xl font-bold">Projetos próprios</h3><p class="mt-3 leading-7 text-muted">Desenvolvimento de sistemas personalizados para organizar rotinas e resolver problemas reais de empresas.</p></article>
+  </div>
+</section>
+
+<section id="servicos" class="border-y border-white/5 bg-[#0c1017]">
+  <div class="mx-auto max-w-page px-5 py-20 lg:px-8 lg:py-24">
+    <div class="max-w-3xl"><p class="text-sm font-bold uppercase tracking-[.18em] text-primarySoft">Como posso ajudar</p><h2 class="mt-4 text-3xl font-bold sm:text-4xl">Soluções para a rotina da sua empresa.</h2></div>
+    <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+      <article class="glass rounded-2xl p-6"><span class="material-symbols-outlined text-4xl text-primarySoft">lan</span><h3 class="mt-5 text-lg font-bold">Redes e infraestrutura</h3><p class="mt-3 leading-7 text-muted">Planejamento, instalação, cabeamento, organização e configuração de redes.</p></article>
+      <article class="glass rounded-2xl p-6"><span class="material-symbols-outlined text-4xl text-primarySoft">support_agent</span><h3 class="mt-5 text-lg font-bold">Suporte help desk</h3><p class="mt-3 leading-7 text-muted">Atendimento para computadores, sistemas, internet, impressoras e usuários.</p></article>
+      <article class="glass rounded-2xl p-6"><span class="material-symbols-outlined text-4xl text-primarySoft">security</span><h3 class="mt-5 text-lg font-bold">Segurança eletrônica</h3><p class="mt-3 leading-7 text-muted">Experiência com instalação, manutenção e suporte em equipamentos de segurança.</p></article>
+      <article class="glass rounded-2xl p-6"><span class="material-symbols-outlined text-4xl text-primarySoft">code_blocks</span><h3 class="mt-5 text-lg font-bold">Sistemas sob medida</h3><p class="mt-3 leading-7 text-muted">Soluções simples e personalizadas para organizar processos e informações.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="projeto" class="mx-auto max-w-page px-5 py-20 lg:px-8 lg:py-24">
+  <div class="max-w-3xl">
+    <p class="text-sm font-bold uppercase tracking-[.18em] text-primarySoft">Projeto em destaque</p>
+    <h2 class="mt-4 text-3xl font-bold sm:text-4xl">Sistema de Controle de Fiados</h2>
+    <p class="mt-5 text-lg leading-8 text-muted">
+      Sistema desenvolvido para um supermercado, reunindo cadastro de clientes, controle de cobranças, pagamentos, relatórios e indicadores em uma única plataforma.
+    </p>
+    <p class="mt-4 text-sm leading-6 text-slate-400">As capturas abaixo tiveram dados pessoais e financeiros ocultados para preservar a privacidade da empresa e de seus clientes.</p>
   </div>
 
-  <main id="inicio" class="pt-20">
-    <section class="relative overflow-hidden border-b border-white/5 grid-bg">
-      <div class="absolute left-1/2 top-20 h-72 w-72 -translate-x-1/2 rounded-full bg-primary/20 blur-[120px]"></div>
-      <div class="relative mx-auto grid max-w-page items-center gap-12 px-5 py-20 lg:grid-cols-[1.05fr_.95fr] lg:px-8 lg:py-28">
-        <div>
-          <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-4 py-2 text-sm font-medium text-primarySoft">
-            <span class="material-symbols-outlined text-lg">location_on</span>
-            São Miguel do Araguaia – GO e região
-          </div>
-          <h1 class="max-w-3xl text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
-            Tecnologia para sua empresa <span class="text-primarySoft">funcionar melhor.</span>
-          </h1>
-          <p class="mt-7 max-w-2xl text-lg leading-8 text-muted">
-            Projetos de rede e infraestrutura de ponta a ponta, sistemas sob medida para pequenos negócios e suporte help desk para manter a operação funcionando.
-          </p>
-          <div class="mt-9 flex flex-col gap-4 sm:flex-row">
-            <a data-whatsapp href="#" class="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-7 py-4 font-semibold transition hover:bg-blue-500">
-              <span class="material-symbols-outlined">chat</span> Solicitar atendimento
-            </a>
-            <a href="#servicos" class="inline-flex items-center justify-center gap-2 rounded-xl border border-line px-7 py-4 font-semibold transition hover:bg-white/5">
-              Conhecer os serviços <span class="material-symbols-outlined">arrow_downward</span>
-            </a>
-          </div>
-        </div>
+  <div class="mt-12 grid gap-6 lg:grid-cols-2">
+    <figure class="project-shot overflow-hidden rounded-2xl border border-white/10 bg-card">
+      <img src="assets/projeto/dashboard.png" alt="Dashboard do sistema com informações financeiras protegidas" class="aspect-[16/8.3] w-full object-cover" loading="lazy">
+      <figcaption class="p-5"><h3 class="font-bold">Visão geral</h3><p class="mt-2 text-sm leading-6 text-muted">Dashboard com indicadores para acompanhamento financeiro e atalhos operacionais.</p></figcaption>
+    </figure>
+    <figure class="project-shot overflow-hidden rounded-2xl border border-white/10 bg-card">
+      <img src="assets/projeto/clientes.png" alt="Gerenciamento de clientes com dados protegidos" class="aspect-[16/8.3] w-full object-cover" loading="lazy">
+      <figcaption class="p-5"><h3 class="font-bold">Gerenciamento de clientes</h3><p class="mt-2 text-sm leading-6 text-muted">Pesquisa, filtros, status financeiro e acesso rápido às informações de cada cadastro.</p></figcaption>
+    </figure>
+    <figure class="project-shot overflow-hidden rounded-2xl border border-white/10 bg-card">
+      <img src="assets/projeto/cobrancas.png" alt="Painel de cobranças com dados protegidos" class="aspect-[16/8.3] w-full object-cover" loading="lazy">
+      <figcaption class="p-5"><h3 class="font-bold">Painel de cobranças</h3><p class="mt-2 text-sm leading-6 text-muted">Organização de atrasos por período e priorização dos atendimentos de cobrança.</p></figcaption>
+    </figure>
+    <figure class="project-shot overflow-hidden rounded-2xl border border-white/10 bg-card">
+      <img src="assets/projeto/relatorios.png" alt="Relatórios e auditoria com dados protegidos" class="aspect-[16/8.3] w-full object-cover" loading="lazy">
+      <figcaption class="p-5"><h3 class="font-bold">Relatórios e auditoria</h3><p class="mt-2 text-sm leading-6 text-muted">Filtros, demonstrativos e opções de exportação para apoiar a gestão.</p></figcaption>
+    </figure>
+  </div>
 
-        <div class="relative">
-          <div class="glass glow rounded-3xl p-5 sm:p-7">
-            <div class="rounded-2xl border border-white/10 bg-[#0c1119] p-5">
-              <div class="mb-6 flex items-center justify-between border-b border-white/10 pb-4">
-                <div class="flex gap-2"><span class="h-3 w-3 rounded-full bg-red-400/80"></span><span class="h-3 w-3 rounded-full bg-yellow-400/80"></span><span class="h-3 w-3 rounded-full bg-green-400/80"></span></div>
-                <span class="text-xs text-slate-500">soluções.tech</span>
-              </div>
-              <div class="space-y-4">
-                <div class="rounded-xl border border-primary/20 bg-primary/10 p-4">
-                  <div class="flex items-start gap-3"><span class="material-symbols-outlined text-primarySoft">lan</span><div><p class="font-semibold">Rede e infraestrutura</p><p class="mt-1 text-sm text-muted">Planejamento, instalação, organização e configuração.</p></div></div>
-                </div>
-                <div class="rounded-xl border border-white/10 bg-white/[.03] p-4">
-                  <div class="flex items-start gap-3"><span class="material-symbols-outlined text-primarySoft">code_blocks</span><div><p class="font-semibold">Sistemas para empresas</p><p class="mt-1 text-sm text-muted">Ferramentas simples criadas para necessidades reais.</p></div></div>
-                </div>
-                <div class="rounded-xl border border-white/10 bg-white/[.03] p-4">
-                  <div class="flex items-start gap-3"><span class="material-symbols-outlined text-primarySoft">support_agent</span><div><p class="font-semibold">Suporte help desk</p><p class="mt-1 text-sm text-muted">Apoio técnico remoto e presencial conforme a demanda.</p></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="mt-10 rounded-2xl border border-primary/20 bg-primary/10 p-7 text-center">
+    <h3 class="text-2xl font-bold">Sua empresa também precisa de uma ferramenta própria?</h3>
+    <p class="mx-auto mt-4 max-w-2xl leading-7 text-muted">Cada solução é planejada de acordo com a realidade do negócio, sem recursos desnecessários.</p>
+    <a data-whatsapp href="#" class="mt-6 inline-flex items-center gap-2 rounded-xl bg-primary px-7 py-4 font-semibold hover:bg-blue-500"><span class="material-symbols-outlined">chat</span> Conversar sobre um projeto</a>
+  </div>
+</section>
 
-    <section id="servicos" class="mx-auto max-w-page px-5 py-20 lg:px-8 lg:py-24">
-      <div class="max-w-2xl">
-        <p class="text-sm font-bold uppercase tracking-[.18em] text-primarySoft">Serviços</p>
-        <h2 class="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">Soluções práticas para a rotina da sua empresa.</h2>
-        <p class="mt-5 text-lg leading-8 text-muted">O atendimento começa pelo problema real do negócio. A solução é planejada de forma clara, sem complicação e sem oferecer o que a empresa não precisa.</p>
-      </div>
-
-      <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-        <article class="glass rounded-2xl p-7 transition hover:-translate-y-1 hover:border-primary/50">
-          <span class="material-symbols-outlined text-4xl text-primarySoft">lan</span>
-          <h3 class="mt-6 text-xl font-bold">Redes e infraestrutura</h3>
-          <p class="mt-3 leading-7 text-muted">Projetos de rede de ponta a ponta, cabeamento, organização da estrutura, instalação e configuração dos equipamentos necessários.</p>
-        </article>
-        <article class="glass rounded-2xl p-7 transition hover:-translate-y-1 hover:border-primary/50">
-          <span class="material-symbols-outlined text-4xl text-primarySoft">developer_mode</span>
-          <h3 class="mt-6 text-xl font-bold">Sistemas sob medida</h3>
-          <p class="mt-3 leading-7 text-muted">Pequenos sistemas para organizar processos, reduzir tarefas manuais e facilitar o controle das atividades da empresa.</p>
-        </article>
-        <article class="glass rounded-2xl p-7 transition hover:-translate-y-1 hover:border-primary/50">
-          <span class="material-symbols-outlined text-4xl text-primarySoft">support_agent</span>
-          <h3 class="mt-6 text-xl font-bold">Suporte help desk</h3>
-          <p class="mt-3 leading-7 text-muted">Atendimento para dúvidas, falhas, configurações e problemas do dia a dia, com suporte remoto ou presencial conforme o caso.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="border-y border-white/5 bg-[#0c1017]">
-      <div class="mx-auto grid max-w-page gap-12 px-5 py-20 lg:grid-cols-2 lg:px-8 lg:py-24">
-        <div>
-          <p class="text-sm font-bold uppercase tracking-[.18em] text-primarySoft">Problemas comuns</p>
-          <h2 class="mt-4 text-3xl font-bold sm:text-4xl">Quando a tecnologia começa a atrapalhar o trabalho.</h2>
-          <p class="mt-5 text-lg leading-8 text-muted">Pequenas falhas acumuladas podem gerar lentidão, retrabalho e parada na operação.</p>
-        </div>
-        <div class="grid gap-4">
-          <div class="flex gap-4 rounded-xl border border-white/10 bg-white/[.025] p-5"><span class="material-symbols-outlined text-red-300">wifi_off</span><p>Internet lenta, quedas constantes ou sinal mal distribuído.</p></div>
-          <div class="flex gap-4 rounded-xl border border-white/10 bg-white/[.025] p-5"><span class="material-symbols-outlined text-red-300">device_unknown</span><p>Problemas em computadores e equipamentos sem suporte rápido.</p></div>
-          <div class="flex gap-4 rounded-xl border border-white/10 bg-white/[.025] p-5"><span class="material-symbols-outlined text-red-300">hourglass_empty</span><p>Controles manuais que consomem tempo e dificultam a organização.</p></div>
-          <div class="flex gap-4 rounded-xl border border-white/10 bg-white/[.025] p-5"><span class="material-symbols-outlined text-red-300">cable</span><p>Cabos, roteadores e estrutura instalados sem planejamento.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projeto" class="mx-auto max-w-page px-5 py-20 lg:px-8 lg:py-24">
-      <div class="overflow-hidden rounded-3xl border border-primary/20 bg-gradient-to-br from-primary/15 to-card">
-        <div class="grid items-center gap-8 p-7 sm:p-10 lg:grid-cols-[1fr_auto] lg:p-14">
-          <div>
-            <p class="text-sm font-bold uppercase tracking-[.18em] text-primarySoft">Projeto recente</p>
-            <h2 class="mt-4 text-3xl font-bold">Sistema de Controle de Fiados — Supermercado Ideal</h2>
-            <p class="mt-5 max-w-3xl text-lg leading-8 text-muted">Sistema desenvolvido para apoiar o controle interno de clientes, compras fiadas, pagamentos e acompanhamento de valores em aberto.</p>
-            <div class="mt-7 flex flex-wrap gap-3 text-sm">
-              <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2">Sistema web</span>
-              <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2">Uso empresarial</span>
-              <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2">Processo sob medida</span>
-            </div>
-          </div>
-          <a href="https://supermercado-ideal.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-4 font-semibold text-slate-950 transition hover:bg-slate-100">
-            Ver projeto <span class="material-symbols-outlined">open_in_new</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="sobre" class="border-y border-white/5 bg-card/45">
-      <div class="mx-auto grid max-w-page gap-12 px-5 py-20 lg:grid-cols-[1fr_.8fr] lg:px-8 lg:py-24">
-        <div>
-          <p class="text-sm font-bold uppercase tracking-[.18em] text-primarySoft">Sobre o atendimento</p>
-          <h2 class="mt-4 text-3xl font-bold sm:text-4xl">Tecnologia com atendimento próximo e solução de verdade.</h2>
-          <p class="mt-6 text-lg leading-8 text-muted">Richard atua com redes, infraestrutura, desenvolvimento de pequenos sistemas para empresas e suporte help desk. O foco é entender a necessidade, explicar as opções e entregar uma solução adequada à realidade de cada negócio.</p>
-          <p class="mt-5 text-lg leading-8 text-muted">Os atendimentos podem ser presenciais em São Miguel do Araguaia e região ou remotos quando o tipo de suporte permitir.</p>
-        </div>
-        <div class="glass rounded-2xl p-7">
-          <h3 class="text-xl font-bold">Como funciona</h3>
-          <ol class="mt-6 space-y-6">
-            <li class="flex gap-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary font-bold">1</span><div><p class="font-semibold">Entendimento da necessidade</p><p class="mt-1 text-sm leading-6 text-muted">Você explica o problema ou o que deseja melhorar.</p></div></li>
-            <li class="flex gap-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary font-bold">2</span><div><p class="font-semibold">Avaliação e proposta</p><p class="mt-1 text-sm leading-6 text-muted">A solução é planejada de acordo com o cenário da empresa.</p></div></li>
-            <li class="flex gap-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary font-bold">3</span><div><p class="font-semibold">Execução e suporte</p><p class="mt-1 text-sm leading-6 text-muted">O serviço é realizado e acompanhado conforme a necessidade.</p></div></li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <section id="faq" class="mx-auto max-w-3xl px-5 py-20 lg:py-24">
-      <div class="text-center">
-        <p class="text-sm font-bold uppercase tracking-[.18em] text-primarySoft">Dúvidas frequentes</p>
-        <h2 class="mt-4 text-3xl font-bold sm:text-4xl">Antes de solicitar atendimento</h2>
-      </div>
-      <div class="mt-10 space-y-4">
-        <details class="glass group rounded-xl p-6">
-          <summary class="flex cursor-pointer items-center justify-between gap-4 font-semibold"><span>Você atende empresas de qualquer tamanho?</span><span class="material-symbols-outlined transition group-open:rotate-180">expand_more</span></summary>
-          <p class="mt-4 border-t border-white/10 pt-4 leading-7 text-muted">O atendimento é voltado principalmente para pequenos negócios e empresas que precisam melhorar sua estrutura, resolver problemas técnicos ou criar uma ferramenta simples para a rotina.</p>
-        </details>
-        <details class="glass group rounded-xl p-6">
-          <summary class="flex cursor-pointer items-center justify-between gap-4 font-semibold"><span>O suporte pode ser remoto?</span><span class="material-symbols-outlined transition group-open:rotate-180">expand_more</span></summary>
-          <p class="mt-4 border-t border-white/10 pt-4 leading-7 text-muted">Sim. Quando o problema permitir, o suporte pode ser feito remotamente. Serviços de rede, infraestrutura física e algumas manutenções exigem atendimento presencial.</p>
-        </details>
-        <details class="glass group rounded-xl p-6">
-          <summary class="flex cursor-pointer items-center justify-between gap-4 font-semibold"><span>Você desenvolve sistemas completos?</span><span class="material-symbols-outlined transition group-open:rotate-180">expand_more</span></summary>
-          <p class="mt-4 border-t border-white/10 pt-4 leading-7 text-muted">O foco é desenvolver pequenos sistemas e ferramentas sob medida para necessidades específicas de empresas. O escopo é avaliado antes de apresentar a proposta.</p>
-        </details>
-        <details class="glass group rounded-xl p-6">
-          <summary class="flex cursor-pointer items-center justify-between gap-4 font-semibold"><span>Como solicitar um orçamento?</span><span class="material-symbols-outlined transition group-open:rotate-180">expand_more</span></summary>
-          <p class="mt-4 border-t border-white/10 pt-4 leading-7 text-muted">Basta chamar pelo WhatsApp e explicar brevemente o que está acontecendo ou o que a empresa precisa. A partir disso, Richard orienta os próximos passos.</p>
-        </details>
-      </div>
-    </section>
-
-    <section class="mx-auto max-w-page px-5 pb-20 lg:px-8 lg:pb-24">
-      <div class="relative overflow-hidden rounded-3xl border border-primary/25 bg-gradient-to-br from-primary/20 via-card to-card p-8 text-center sm:p-14">
-        <div class="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-primary/20 blur-[80px]"></div>
-        <div class="relative">
-          <h2 class="text-3xl font-bold sm:text-4xl">Sua empresa precisa de uma solução em tecnologia?</h2>
-          <p class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-muted">Converse diretamente com Richard, explique sua necessidade e receba uma orientação sobre o melhor caminho.</p>
-          <a data-whatsapp href="#" class="mt-8 inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-8 py-4 font-semibold transition hover:bg-blue-500"><span class="material-symbols-outlined">chat</span> Falar com Richard</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="border-t border-white/10 bg-[#0b0e14]">
-    <div class="mx-auto flex max-w-page flex-col gap-8 px-5 py-12 md:flex-row md:items-center md:justify-between lg:px-8">
-      <div>
-        <p class="font-bold">Richard | Soluções em Tecnologia</p>
-        <p class="mt-2 text-sm text-muted">São Miguel do Araguaia – GO e região</p>
-        <p class="mt-1 text-sm text-muted">© 2026 Todos os direitos reservados.</p>
-      </div>
-      <div class="flex flex-wrap gap-3">
-        <a href="https://www.instagram.com/orichard.ti?igsh=MTlvNmRmYXJ1aWdxZg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-lg border border-line px-4 py-3 text-sm font-semibold transition hover:bg-white/5"><span class="material-symbols-outlined">photo_camera</span> Instagram</a>
-        <a data-whatsapp href="#" class="inline-flex items-center gap-2 rounded-lg border border-line px-4 py-3 text-sm font-semibold transition hover:bg-white/5"><span class="material-symbols-outlined">call</span> WhatsApp</a>
-      </div>
+<section class="border-y border-white/5 bg-card/45">
+  <div class="mx-auto grid max-w-page gap-10 px-5 py-20 lg:grid-cols-[1fr_.8fr] lg:px-8 lg:py-24">
+    <div><p class="text-sm font-bold uppercase tracking-[.18em] text-primarySoft">Atendimento</p><h2 class="mt-4 text-3xl font-bold sm:text-4xl">Tecnologia com comunicação clara e solução de verdade.</h2><p class="mt-6 text-lg leading-8 text-muted">O primeiro passo é entender o problema. Depois, avalio as possibilidades e explico o melhor caminho de forma direta, considerando a realidade e o orçamento da empresa.</p></div>
+    <div class="glass rounded-2xl p-7">
+      <h3 class="text-xl font-bold">Como funciona</h3>
+      <ol class="mt-6 space-y-6">
+        <li class="flex gap-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary font-bold">1</span><div><p class="font-semibold">Você explica a necessidade</p><p class="mt-1 text-sm leading-6 text-muted">Conte o problema ou o processo que deseja melhorar.</p></div></li>
+        <li class="flex gap-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary font-bold">2</span><div><p class="font-semibold">Avaliação da solução</p><p class="mt-1 text-sm leading-6 text-muted">Analiso o cenário e apresento uma proposta adequada.</p></div></li>
+        <li class="flex gap-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary font-bold">3</span><div><p class="font-semibold">Execução e acompanhamento</p><p class="mt-1 text-sm leading-6 text-muted">Realizo o serviço e acompanho o funcionamento quando necessário.</p></div></li>
+      </ol>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <a data-whatsapp href="#" aria-label="Falar com Richard pelo WhatsApp" class="fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-2xl transition hover:scale-105 sm:bottom-7 sm:right-7">
-    <span class="material-symbols-outlined text-3xl">chat</span>
-  </a>
+<section class="mx-auto max-w-page px-5 py-20 lg:px-8 lg:py-24">
+  <div class="relative overflow-hidden rounded-3xl border border-primary/25 bg-gradient-to-br from-primary/20 via-card to-card p-8 text-center sm:p-14">
+    <h2 class="text-3xl font-bold sm:text-4xl">Precisa melhorar a tecnologia da sua empresa?</h2>
+    <p class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-muted">Converse comigo sobre redes, suporte, infraestrutura, segurança eletrônica ou uma solução personalizada.</p>
+    <a data-whatsapp href="#" class="mt-8 inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-8 py-4 font-semibold hover:bg-blue-500"><span class="material-symbols-outlined">chat</span> Falar com Richard</a>
+  </div>
+</section>
+</main>
 
-  <script>
-    const whatsappNumber = '5562999407334';
-    const whatsappMessage = 'Olá, Richard! Vi seu site e gostaria de conversar sobre uma solução em tecnologia para minha empresa.';
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-    document.querySelectorAll('[data-whatsapp]').forEach(link => {
-      link.href = whatsappUrl;
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-    });
+<footer class="border-t border-white/10 bg-[#0b0e14]">
+  <div class="mx-auto flex max-w-page flex-col gap-8 px-5 py-12 md:flex-row md:items-center md:justify-between lg:px-8">
+    <div><p class="font-bold">Richard | Soluções em Tecnologia</p><p class="mt-2 text-sm text-muted">São Miguel do Araguaia – GO e região</p></div>
+    <div class="flex flex-wrap gap-4">
+      <a href="https://www.instagram.com/orichard.ti?igsh=MTlvNmRmYXJ1aWdxZg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="text-sm font-medium text-muted hover:text-white">@orichard.ti</a>
+      <a data-whatsapp href="#" class="text-sm font-medium text-muted hover:text-white">WhatsApp</a>
+    </div>
+  </div>
+</footer>
 
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const closeMenuBtn = document.getElementById('close-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
+<a data-whatsapp href="#" aria-label="Falar com Richard pelo WhatsApp" class="fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-2xl transition hover:scale-105">
+  <span class="material-symbols-outlined text-3xl">chat</span>
+</a>
 
-    function openMenu() {
-      mobileMenu.classList.remove('hidden');
-      document.body.style.overflow = 'hidden';
-      mobileMenuBtn.setAttribute('aria-expanded', 'true');
-    }
-    function closeMenu() {
-      mobileMenu.classList.add('hidden');
-      document.body.style.overflow = '';
-      mobileMenuBtn.setAttribute('aria-expanded', 'false');
-    }
-
-    mobileMenuBtn.addEventListener('click', openMenu);
-    closeMenuBtn.addEventListener('click', closeMenu);
-    mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
-  </script>
+<script>
+  const whatsappNumber = '5562999407334';
+  const whatsappMessage = 'Olá, Richard! Vim pelo seu site e gostaria de conversar sobre uma solução em tecnologia.';
+  document.querySelectorAll('[data-whatsapp]').forEach(link => {
+    link.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+    link.target = '_blank'; link.rel = 'noopener noreferrer';
+  });
+  const menu = document.getElementById('mobile-menu');
+  document.getElementById('mobile-menu-btn').addEventListener('click', () => menu.classList.remove('hidden'));
+  document.getElementById('close-menu-btn').addEventListener('click', () => menu.classList.add('hidden'));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.add('hidden')));
+</script>
 </body>
 </html>
