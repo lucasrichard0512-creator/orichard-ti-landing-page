@@ -7,7 +7,7 @@
 <meta content="Richard atua com infraestrutura, redes, suporte técnico, segurança eletrônica e desenvolvimento de sistemas para empresas." name="description"/>
 <meta content="#f4f7fb" name="theme-color"/>
 <meta content="Richard | Soluções em Tecnologia" property="og:title"/>
-<meta content="Experiência prática em infraestrutura, redes, suporte técnico, segurança eletrônica e desenvolvimento de sistemas para empresas." property="og:description"/>
+<meta content="Experiência prática em infraestrutura, redes, suporte técnico e desenvolvimento de sistemas para empresas." property="og:description"/>
 <meta content="website" property="og:type"/>
 <title>Richard | Soluções em Tecnologia</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -47,39 +47,97 @@
       position: sticky;
       top: 0;
       z-index: 30;
-      background: rgba(255,255,255,.95);
-      border-bottom: 1px solid rgba(216,225,234,.9);
-      backdrop-filter: blur(14px);
+      background: rgba(255,255,255,.97);
+      border-bottom: 1px solid #dbe4ec;
+      box-shadow: 0 6px 24px rgba(23,50,77,.06);
+      backdrop-filter: blur(16px);
+    }
+
+    .header::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 3px;
+      background: linear-gradient(90deg, #17324d, #2f6da5, #78a9cf);
     }
 
     .header-inner {
-      min-height: 78px;
+      min-height: 82px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 28px;
+      gap: 30px;
     }
 
     .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
       font-family: Manrope, Inter, sans-serif;
-      font-weight: 800;
-      font-size: 1.05rem;
       color: var(--navy);
-      letter-spacing: -.02em;
     }
 
-    .brand span { color: var(--blue); }
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      flex: 0 0 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: linear-gradient(145deg, #17324d, #2f6da5);
+      color: #fff;
+      font-size: 1.18rem;
+      font-weight: 800;
+      box-shadow: 0 8px 18px rgba(23,50,77,.18);
+    }
+
+    .brand-copy {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .brand-name {
+      font-size: 1.08rem;
+      font-weight: 800;
+      letter-spacing: -.025em;
+    }
+
+    .brand-role {
+      margin-top: 5px;
+      color: #6a7e91;
+      font-family: Inter, Arial, sans-serif;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
 
     .nav {
       display: flex;
       align-items: center;
-      gap: 28px;
-      font-size: .94rem;
-      font-weight: 600;
-      color: #4f6478;
+      gap: 26px;
+      font-size: .92rem;
+      font-weight: 650;
+      color: #52677a;
     }
 
     .nav a:not(.btn):hover { color: var(--blue); }
+
+    .header-whatsapp {
+      min-height: 46px;
+      padding: 0 19px;
+      border-radius: 11px;
+      box-shadow: 0 8px 18px rgba(47,109,165,.18);
+    }
+
+    .header-whatsapp::before {
+      content: "↗";
+      margin-right: 9px;
+      font-size: 1rem;
+      font-weight: 800;
+    }
 
     .btn {
       display: inline-flex;
@@ -303,7 +361,7 @@
 
     .service-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 22px;
     }
 
@@ -347,7 +405,7 @@
 
     .about-grid {
       display: grid;
-      grid-template-columns: .85fr 1.15fr;
+      grid-template-columns: 1fr;
       gap: 64px;
       align-items: start;
     }
@@ -581,6 +639,7 @@
 
       .hero-grid { min-height: auto; gap: 42px; padding: 72px 0; }
       .case-tags { justify-content: flex-start; }
+      .service-grid { grid-template-columns: 1fr; }
       .gallery { grid-template-columns: 1fr 1fr; }
       .cta-box { text-align: left; }
       .cta-box .btn { justify-self: start; }
@@ -589,9 +648,14 @@
 
     @media (max-width: 680px) {
       .container { width: min(100% - 28px, 1180px); }
-      .header-inner { min-height: 68px; }
-      .brand span { display: none; }
-      .nav .btn { min-height: 44px; padding: 0 16px; font-size: .88rem; }
+      .header-inner { min-height: 74px; gap: 12px; }
+      .brand { gap: 9px; }
+      .brand-mark { width: 38px; height: 38px; flex-basis: 38px; border-radius: 10px; }
+      .brand-name { font-size: 1rem; }
+      .brand-role { margin-top: 4px; font-size: .59rem; letter-spacing: .06em; }
+      .nav { gap: 0; }
+      .nav .header-whatsapp { min-height: 44px; padding: 0 15px; font-size: .82rem; }
+      .header-whatsapp::before { margin-right: 7px; }
       .hero-grid { padding: 54px 0 60px; }
       .hero-panel { padding: 26px; }
       .hero-actions { flex-direction: column; }
@@ -611,12 +675,18 @@
 <body>
 <header class="header">
 <div class="container header-inner">
-<a class="brand" href="#inicio">Richard <span>| Soluções em Tecnologia</span></a>
+<a class="brand" href="#inicio" aria-label="Richard — Soluções em Tecnologia">
+<span class="brand-mark">R</span>
+<span class="brand-copy">
+<span class="brand-name">Richard</span>
+<span class="brand-role">Soluções em Tecnologia</span>
+</span>
+</a>
 <nav aria-label="Navegação principal" class="nav">
 <a href="#servicos">Serviços</a>
-<a href="#sobre">Trajetória</a>
+<a href="#sobre">Sobre</a>
 <a href="#projeto">Projeto</a>
-<a class="btn" data-whatsapp="" href="#">Falar no WhatsApp</a>
+<a class="btn header-whatsapp" data-whatsapp="" href="#">WhatsApp</a>
 </nav>
 </div>
 </header>
@@ -626,7 +696,7 @@
 <div>
 <span class="eyebrow">Soluções em tecnologia para empresas</span>
 <h1>Transformo problemas em soluções através da tecnologia.</h1>
-<p class="hero-copy">Experiência prática em infraestrutura, redes, suporte técnico, segurança eletrônica e desenvolvimento de sistemas para empresas.</p>
+<p class="hero-copy">Experiência prática em infraestrutura, redes, suporte técnico e desenvolvimento de sistemas para empresas.</p>
 <div class="hero-actions">
 <a class="btn" data-whatsapp="" href="#">Solicitar atendimento</a>
 <a class="btn btn-secondary" href="#sobre">Conhecer minha trajetória</a>
@@ -635,7 +705,6 @@
 <span class="tag">Redes e infraestrutura</span>
 <span class="tag">Suporte e help desk</span>
 <span class="tag">Sistemas sob medida</span>
-<span class="tag">Segurança eletrônica</span>
 </div>
 </div>
 <aside class="hero-panel">
@@ -700,24 +769,6 @@
 </section>
 <section id="sobre">
 <div class="container about-grid">
-<aside class="about-panel">
-<h3>Uma trajetória construída na prática.</h3>
-<p>Experiência formada em manutenção, segurança eletrônica, infraestrutura, suporte de TI e desenvolvimento de sistemas.</p>
-<div class="about-facts">
-<div class="about-fact">
-<strong>Técnico de smartphones</strong>
-<span>Diagnóstico, manutenção e resolução de falhas em dispositivos móveis.</span>
-</div>
-<div class="about-fact">
-<strong>3 anos na SoSafe</strong>
-<span>Técnico de segurança eletrônica e auxiliar de TI.</span>
-</div>
-<div class="about-fact">
-<strong>Formação em tecnologia</strong>
-<span>Redes de Computadores e Segurança da Informação.</span>
-</div>
-</div>
-</aside>
 <div class="about-copy">
 <span class="eyebrow">Quem sou eu</span>
 <h2>Experiência prática aplicada à tecnologia.</h2>
