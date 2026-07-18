@@ -815,145 +815,154 @@
     }
 
 
-    /* Refinamento corporativo: menos espaço, títulos mais controlados */
+    /* Ajuste forte de escala e espaçamento */
     .header-inner {
-      min-height: 72px;
+      min-height: 68px !important;
     }
 
     .header-whatsapp {
-      min-height: 42px;
-      padding: 0 16px;
-      border-radius: 10px;
+      min-height: 40px !important;
+      padding: 0 15px !important;
     }
 
     .hero-grid {
-      min-height: auto;
-      padding: 72px 0 68px;
-      gap: 44px;
+      min-height: 0 !important;
+      padding: 48px 0 46px !important;
+      gap: 28px !important;
+      align-items: start !important;
     }
 
     .hero h1,
     h1 {
-      max-width: 11ch;
-      margin-bottom: 18px;
-      font-size: clamp(2.65rem, 5.2vw, 4rem);
-      line-height: 1.04;
-      letter-spacing: -.045em;
-    }
-
-    .hero-copy {
-      max-width: 640px;
-      margin-bottom: 24px;
-      font-size: 1.03rem;
-      line-height: 1.72;
+      width: 100% !important;
+      max-width: 760px !important;
+      margin: 0 0 14px !important;
+      font-size: clamp(2.4rem, 4.4vw, 3.45rem) !important;
+      line-height: 1.04 !important;
+      letter-spacing: -.04em !important;
     }
 
     .eyebrow {
-      margin-bottom: 14px;
+      margin-bottom: 10px !important;
+    }
+
+    .hero-copy {
+      max-width: 650px !important;
+      margin-bottom: 18px !important;
+      font-size: 1rem !important;
+      line-height: 1.62 !important;
     }
 
     .hero-actions {
-      margin-bottom: 18px;
+      margin-bottom: 14px !important;
     }
 
     section {
-      padding: 74px 0;
+      padding: 54px 0 !important;
     }
 
     .section-heading {
-      margin-bottom: 32px;
+      margin-bottom: 24px !important;
     }
 
-    .section-heading h2,
-    h2 {
-      margin-bottom: 14px;
-      font-size: clamp(1.9rem, 3vw, 2.7rem);
-      line-height: 1.14;
+    h2,
+    .section-heading h2 {
+      margin-bottom: 10px !important;
+      font-size: clamp(1.8rem, 2.7vw, 2.45rem) !important;
+      line-height: 1.12 !important;
     }
 
     .about-grid,
     .case-intro {
-      gap: 38px;
+      gap: 28px !important;
     }
 
-    .about-panel,
     .hero-panel,
+    .about-panel,
     .service-card {
-      padding: 26px;
+      padding: 22px !important;
     }
 
     .gallery,
     .service-grid {
-      gap: 18px;
+      gap: 16px !important;
     }
 
     .cta {
-      padding: 60px 0;
+      padding: 44px 0 !important;
     }
 
     .cta-box {
-      padding: 34px 36px;
-    }
-
-    .case-feature figcaption {
-      padding: 22px 24px;
+      padding: 28px 30px !important;
     }
 
     @media (max-width: 920px) {
       .hero-grid {
-        padding: 56px 0 60px;
-        gap: 30px;
+        grid-template-columns: 1fr !important;
+        padding: 38px 0 42px !important;
+        gap: 22px !important;
       }
 
       section {
-        padding: 64px 0;
+        padding: 46px 0 !important;
       }
     }
 
     @media (max-width: 680px) {
       .header-inner {
-        min-height: 68px;
+        min-height: 64px !important;
+      }
+
+      .nav .header-whatsapp {
+        min-height: 40px !important;
+        padding: 0 12px !important;
+        font-size: .8rem !important;
       }
 
       .hero-grid {
-        padding: 42px 0 50px;
-        gap: 24px;
+        padding: 28px 0 34px !important;
+        gap: 18px !important;
       }
 
       .hero h1,
       h1 {
-        max-width: 11ch;
-        margin-bottom: 16px;
-        font-size: clamp(2.3rem, 10.8vw, 3rem);
-        line-height: 1.03;
+        max-width: none !important;
+        margin-bottom: 12px !important;
+        font-size: 2.35rem !important;
+        line-height: 1.03 !important;
       }
 
       .hero-copy {
-        margin-bottom: 20px;
-        font-size: .98rem;
-        line-height: 1.65;
+        margin-bottom: 16px !important;
+        font-size: .95rem !important;
+        line-height: 1.58 !important;
       }
 
       section {
-        padding: 54px 0;
+        padding: 38px 0 !important;
       }
 
       .section-heading {
-        margin-bottom: 26px;
+        margin-bottom: 20px !important;
       }
 
-      .about-panel,
+      h2,
+      .section-heading h2 {
+        font-size: 1.85rem !important;
+      }
+
       .hero-panel,
+      .about-panel,
       .service-card {
-        padding: 22px;
+        padding: 20px !important;
       }
 
       .cta {
-        padding: 48px 0;
+        padding: 36px 0 !important;
       }
 
       .cta-box {
-        padding: 28px 22px;
+        padding: 24px 20px !important;
       }
     }
 
