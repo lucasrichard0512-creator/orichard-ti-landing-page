@@ -1419,6 +1419,201 @@
       .footer-links { gap: 14px !important; }
     }
 
+
+    /* Refinamento do cabeçalho e primeira dobra */
+    .header {
+      position: relative !important;
+      top: auto !important;
+      background: #ffffff !important;
+      border-bottom: 1px solid #e3e9ef !important;
+      box-shadow: none !important;
+      backdrop-filter: none !important;
+    }
+
+    .header::before {
+      display: none !important;
+    }
+
+    .header-inner {
+      min-height: 68px !important;
+      padding: 0 !important;
+      gap: 16px !important;
+    }
+
+    .brand-copy {
+      line-height: 1.05 !important;
+    }
+
+    .brand-name {
+      font-size: 1.05rem !important;
+      letter-spacing: -.025em !important;
+    }
+
+    .brand-role {
+      display: block !important;
+      margin-top: 4px !important;
+      font-size: .59rem !important;
+      letter-spacing: .07em !important;
+      color: #718296 !important;
+    }
+
+    .nav {
+      margin-left: auto !important;
+      gap: 0 !important;
+    }
+
+    .nav > a:not(.header-whatsapp) {
+      display: none !important;
+    }
+
+    .header-whatsapp {
+      width: auto !important;
+      min-height: 40px !important;
+      padding: 0 14px !important;
+      gap: 8px !important;
+      border-radius: 9px !important;
+      background: #25b95f !important;
+      color: #fff !important;
+      box-shadow: none !important;
+      font-size: .82rem !important;
+    }
+
+    .header-whatsapp:hover {
+      background: #20a955 !important;
+      transform: none !important;
+    }
+
+    .header-whatsapp span {
+      display: inline !important;
+    }
+
+    .whatsapp-icon {
+      width: 18px !important;
+      height: 18px !important;
+      flex-basis: 18px !important;
+    }
+
+    .hero {
+      background: #ffffff !important;
+    }
+
+    .hero-grid {
+      display: block !important;
+      min-height: 0 !important;
+      padding: 24px 0 34px !important;
+    }
+
+    .hero-grid > div:first-child {
+      max-width: 760px !important;
+    }
+
+    .hero .eyebrow {
+      margin: 0 0 10px !important;
+      font-size: .68rem !important;
+      line-height: 1.4 !important;
+      letter-spacing: .105em !important;
+    }
+
+    .hero h1,
+    h1 {
+      max-width: 12ch !important;
+      margin: 0 0 14px !important;
+      font-size: clamp(2.15rem, 8.8vw, 3.25rem) !important;
+      line-height: 1.03 !important;
+      letter-spacing: -.043em !important;
+    }
+
+    .hero-copy {
+      max-width: 650px !important;
+      margin: 0 0 18px !important;
+      font-size: .94rem !important;
+      line-height: 1.58 !important;
+    }
+
+    .hero-actions {
+      margin: 0 !important;
+    }
+
+    .hero-whatsapp {
+      min-height: 42px !important;
+      padding: 0 16px !important;
+      border-radius: 9px !important;
+      background: #2d6fa8 !important;
+      font-size: .88rem !important;
+    }
+
+    .hero-panel {
+      margin-top: 26px !important;
+      padding: 20px !important;
+      border-radius: 12px !important;
+    }
+
+    .hero-panel h2 {
+      font-size: 1.18rem !important;
+      line-height: 1.25 !important;
+      margin-bottom: 12px !important;
+    }
+
+    .tech-item {
+      grid-template-columns: 32px 1fr !important;
+      gap: 10px !important;
+    }
+
+    .tech-number {
+      width: 32px !important;
+      height: 32px !important;
+    }
+
+    .tech-item h3 {
+      font-size: .94rem !important;
+    }
+
+    .tech-item p {
+      font-size: .82rem !important;
+    }
+
+    @media (max-width: 680px) {
+      .container {
+        width: min(100% - 28px, 1120px) !important;
+      }
+
+      .header-inner {
+        min-height: 64px !important;
+      }
+
+      .brand-name {
+        font-size: 1rem !important;
+      }
+
+      .brand-role {
+        font-size: .55rem !important;
+      }
+
+      .header-whatsapp {
+        min-height: 38px !important;
+        padding: 0 12px !important;
+        font-size: .78rem !important;
+      }
+
+      .hero-grid {
+        padding: 20px 0 30px !important;
+      }
+
+      .hero h1,
+      h1 {
+        font-size: 2.02rem !important;
+        max-width: 12ch !important;
+      }
+
+      .hero-copy {
+        font-size: .92rem !important;
+      }
+
+      .hero-panel {
+        margin-top: 22px !important;
+      }
+    }
+
 </style>
 </head>
 <body>
