@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Richard atua com infraestrutura, redes, suporte técnico, segurança eletrônica e desenvolvimento de sistemas para empresas." name="description"/>
+<meta content="Richard atua com infraestrutura, redes, suporte técnico e desenvolvimento de sistemas para empresas." name="description"/>
 <meta content="#f4f7fb" name="theme-color"/>
 <meta content="Richard | Soluções em Tecnologia" property="og:title"/>
 <meta content="Experiência prática em infraestrutura, redes, suporte técnico e desenvolvimento de sistemas para empresas." property="og:description"/>
@@ -1333,6 +1333,92 @@
       }
     }
 
+
+    /* Lapidação final */
+    .header-inner { min-height: 64px !important; }
+    .brand-role { display: block !important; }
+    .header-whatsapp { min-height: 38px !important; padding: 0 13px !important; font-size: .84rem !important; }
+
+    .hero-grid { padding: 40px 0 44px !important; gap: 22px !important; }
+    .hero h1, h1 { font-size: clamp(2.2rem, 9.4vw, 3.35rem) !important; max-width: 12ch !important; }
+    .hero-actions { margin-bottom: 0 !important; }
+    .hero-whatsapp { width: auto !important; align-self: flex-start !important; gap: 9px !important; }
+    .button-whatsapp-icon { width: 19px; height: 19px; flex: 0 0 19px; }
+    .specialties { display: none !important; }
+
+    .hero-panel { padding: 22px !important; }
+    .hero-panel h2 { font-size: 1.28rem !important; margin-bottom: 14px !important; }
+    .tech-list { gap: 10px !important; }
+    .tech-item { padding-bottom: 10px !important; }
+    .tech-item p { line-height: 1.45 !important; }
+
+    section { padding: 46px 0 !important; }
+    .about-copy { max-width: 780px; }
+    .about-copy p { font-size: .96rem !important; line-height: 1.68 !important; margin-bottom: 14px !important; }
+
+    .case-intro { margin-bottom: 22px !important; }
+    .case-tags { gap: 8px !important; }
+    .case-tag { padding: 7px 10px !important; font-size: .74rem !important; }
+
+    .case-feature figcaption { padding: 17px 19px !important; grid-template-columns: 1fr !important; gap: 5px !important; }
+    .gallery { grid-template-columns: repeat(2, 1fr) !important; gap: 14px !important; }
+    .gallery-card div { padding: 13px 14px !important; }
+    .gallery-card strong { font-size: .9rem !important; }
+    .gallery-card span { font-size: .8rem !important; line-height: 1.45 !important; }
+    .gallery-extra { display: none; }
+    .gallery-extra.is-visible { display: block; }
+    .gallery-toggle {
+      margin-top: 16px;
+      padding: 10px 14px;
+      border: 1px solid #d5e0e9;
+      border-radius: 8px;
+      background: #fff;
+      color: #2d6fa8;
+      font: inherit;
+      font-size: .86rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .privacy-note { margin-top: 12px !important; font-size: .79rem !important; line-height: 1.45 !important; }
+
+    .cta { padding: 38px 0 !important; }
+    .cta-box { padding: 25px 24px !important; }
+    .cta-whatsapp { gap: 9px !important; }
+
+    .floating-whatsapp {
+      width: 50px !important;
+      height: 50px !important;
+      right: 16px !important;
+      bottom: 18px !important;
+      opacity: 0;
+      transform: translateY(12px);
+      pointer-events: none;
+      transition: opacity .22s ease, transform .22s ease !important;
+    }
+    .floating-whatsapp.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    .floating-whatsapp-icon { width: 24px !important; height: 24px !important; }
+
+    .footer-links a { display: inline-flex; align-items: center; gap: 7px; }
+    .footer-icon { color: #2d6fa8; font-weight: 800; }
+
+    @media (max-width: 680px) {
+      .brand-role { display: none !important; }
+      .nav .header-whatsapp span { display: none; }
+      .nav .header-whatsapp { width: 40px; padding: 0 !important; }
+      .hero h1, h1 { font-size: 2.12rem !important; max-width: 12ch !important; }
+      .hero-whatsapp { width: auto !important; min-height: 43px !important; }
+      .gallery { grid-template-columns: 1fr !important; }
+      .gallery-card img { aspect-ratio: 16 / 8.2 !important; }
+      .cta-box { text-align: left !important; }
+      .cta-whatsapp { width: 100% !important; }
+      footer { padding: 24px 0 !important; }
+      .footer-links { gap: 14px !important; }
+    }
+
 </style>
 </head>
 <body>
@@ -1365,17 +1451,18 @@
 <h1>Transformo problemas em soluções através da tecnologia.</h1>
 <p class="hero-copy">Experiência prática em infraestrutura, redes, suporte técnico e desenvolvimento de sistemas para empresas.</p>
 <div class="hero-actions">
-<a class="btn" data-whatsapp="" href="#">Solicitar atendimento</a>
-</div>
-<div aria-label="Áreas de especialidade" class="specialties">
-<span class="tag">Redes e infraestrutura</span>
-<span class="tag">Suporte e help desk</span>
-<span class="tag">Sistemas sob medida</span>
+<a class="btn hero-whatsapp" data-whatsapp="" href="#">
+<svg aria-hidden="true" class="button-whatsapp-icon" viewBox="0 0 32 32">
+<path fill="currentColor" d="M19.11 17.2c-.29-.15-1.72-.85-1.98-.95-.27-.1-.46-.15-.65.15-.19.29-.75.95-.92 1.14-.17.19-.34.22-.63.07-.29-.15-1.23-.45-2.34-1.45-.86-.77-1.45-1.72-1.62-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.65-1.57-.89-2.15-.23-.56-.47-.48-.65-.49h-.56c-.19 0-.51.07-.77.36-.27.29-1.01.99-1.01 2.42s1.04 2.81 1.18 3.01c.15.19 2.05 3.13 4.97 4.39.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.56-.08 1.72-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.19-.56-.34Z"/>
+<path fill="currentColor" d="M27.3 4.7A15.84 15.84 0 0 0 16.03 0C7.25 0 .1 7.15.1 15.94c0 2.81.73 5.55 2.12 7.96L0 32l8.29-2.17a15.9 15.9 0 0 0 7.74 1.97h.01c8.78 0 15.93-7.15 15.93-15.94A15.82 15.82 0 0 0 27.3 4.7ZM16.04 29.11h-.01a13.22 13.22 0 0 1-6.74-1.85l-.48-.29-4.92 1.29 1.31-4.8-.31-.49a13.24 13.24 0 0 1-2.03-7.03C2.86 8.67 8.77 2.76 16.04 2.76c3.52 0 6.83 1.37 9.32 3.86a13.1 13.1 0 0 1 3.86 9.33c0 7.26-5.91 13.16-13.18 13.16Z"/>
+</svg>
+<span>Falar com Richard</span>
+</a>
 </div>
 </div>
 <aside class="hero-panel">
 <span class="panel-kicker">Como posso ajudar</span>
-<h2>Soluções criadas para necessidades reais.</h2>
+<h2>Atuação técnica para necessidades reais.</h2>
 <div class="tech-list">
 <div class="tech-item">
 <div class="tech-number">01</div>
@@ -1407,9 +1494,9 @@
 <div class="about-copy">
 <span class="eyebrow">Quem sou eu</span>
 <h2>Experiência prática aplicada à tecnologia.</h2>
-<p>Sou Richard, profissional de tecnologia. Minha experiência passa pela manutenção de smartphones, segurança eletrônica, infraestrutura, suporte de TI e desenvolvimento de sistemas para empresas.</p>
-<p>Atuei durante três anos na SoSafe como técnico de segurança eletrônica e auxiliar de TI, lidando com infraestrutura, equipamentos, redes e suporte no ambiente empresarial.</p>
-<p>Atualmente curso Redes de Computadores e Segurança da Informação, aprofundando conhecimentos em infraestrutura e proteção de ambientes digitais. Também desenvolvo sistemas personalizados para organizar rotinas e resolver problemas reais de empresas.</p>
+<p>Sou Richard, profissional de tecnologia com experiência em infraestrutura, redes, suporte de TI e desenvolvimento de sistemas.</p>
+<p>Atuei durante três anos na SoSafe como técnico de segurança eletrônica e auxiliar de TI, trabalhando com equipamentos, conectividade e suporte em ambiente empresarial.</p>
+<p>Atualmente curso Redes de Computadores e Segurança da Informação e desenvolvo soluções personalizadas para empresas.</p>
 </div>
 </div>
 </section>
@@ -1426,8 +1513,6 @@
 <span class="case-tag">TypeScript</span>
 <span class="case-tag">Supabase</span>
 <span class="case-tag">PWA</span>
-<span class="case-tag">Controle de acesso</span>
-<span class="case-tag">Sincronização em nuvem</span>
 </div>
 </div>
 <figure class="case-feature">
@@ -1442,25 +1527,26 @@
 <img alt="Tela de clientes com dados protegidos" src="assets/projeto/clientes.png"/>
 <div>
 <strong>Gerenciamento de clientes</strong>
-<span>Pesquisa, filtros, status financeiro e acesso rápido às informações de cada cadastro.</span>
+<span>Pesquisa, filtros e acompanhamento do histórico financeiro.</span>
 </div>
 </article>
 <article class="gallery-card">
 <img alt="Tela de cobranças com dados protegidos" src="assets/projeto/cobrancas.png"/>
 <div>
 <strong>Painel de cobranças</strong>
-<span>Organização de atrasos por período e priorização dos atendimentos de cobrança.</span>
+<span>Organização de atrasos e priorização dos atendimentos.</span>
 </div>
 </article>
-<article class="gallery-card">
+<article class="gallery-card gallery-extra" id="gallery-extra">
 <img alt="Tela de relatórios com dados protegidos" src="assets/projeto/relatorios.png"/>
 <div>
 <strong>Relatórios e auditoria</strong>
-<span>Filtros, demonstrativos e opções de exportação para apoiar a gestão.</span>
+<span>Filtros, demonstrativos e exportação para apoiar a gestão.</span>
 </div>
 </article>
 </div>
-<p class="privacy-note">As capturas tiveram dados pessoais e financeiros ocultados para preservar a privacidade da empresa e de seus clientes.</p>
+<button class="gallery-toggle" id="gallery-toggle" type="button" aria-expanded="false" aria-controls="gallery-extra">Ver mais telas</button>
+<p class="privacy-note">Dados pessoais e financeiros foram ocultados para preservar a privacidade dos clientes.</p>
 </div>
 </section>
 <section class="cta">
@@ -1468,9 +1554,15 @@
 <div class="cta-box">
 <div>
 <h2>Precisa melhorar a tecnologia da sua empresa?</h2>
-<p>Converse comigo sobre redes, suporte, infraestrutura, segurança eletrônica ou uma solução personalizada.</p>
+<p>Converse comigo sobre redes, infraestrutura, suporte técnico ou desenvolvimento de uma solução personalizada.</p>
 </div>
-<a class="btn" data-whatsapp="" href="#">Falar com Richard</a>
+<a class="btn cta-whatsapp" data-whatsapp="" href="#">
+<svg aria-hidden="true" class="button-whatsapp-icon" viewBox="0 0 32 32">
+<path fill="currentColor" d="M19.11 17.2c-.29-.15-1.72-.85-1.98-.95-.27-.1-.46-.15-.65.15-.19.29-.75.95-.92 1.14-.17.19-.34.22-.63.07-.29-.15-1.23-.45-2.34-1.45-.86-.77-1.45-1.72-1.62-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.65-1.57-.89-2.15-.23-.56-.47-.48-.65-.49h-.56c-.19 0-.51.07-.77.36-.27.29-1.01.99-1.01 2.42s1.04 2.81 1.18 3.01c.15.19 2.05 3.13 4.97 4.39.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.56-.08 1.72-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.19-.56-.34Z"/>
+<path fill="currentColor" d="M27.3 4.7A15.84 15.84 0 0 0 16.03 0C7.25 0 .1 7.15.1 15.94c0 2.81.73 5.55 2.12 7.96L0 32l8.29-2.17a15.9 15.9 0 0 0 7.74 1.97h.01c8.78 0 15.93-7.15 15.93-15.94A15.82 15.82 0 0 0 27.3 4.7ZM16.04 29.11h-.01a13.22 13.22 0 0 1-6.74-1.85l-.48-.29-4.92 1.29 1.31-4.8-.31-.49a13.24 13.24 0 0 1-2.03-7.03C2.86 8.67 8.77 2.76 16.04 2.76c3.52 0 6.83 1.37 9.32 3.86a13.1 13.1 0 0 1 3.86 9.33c0 7.26-5.91 13.16-13.18 13.16Z"/>
+</svg>
+<span>Falar com Richard</span>
+</a>
 </div>
 </div>
 </section>
@@ -1482,8 +1574,8 @@
         São Miguel do Araguaia – GO e região
       </div>
 <div class="footer-links">
-<a href="https://www.instagram.com/orichard.ti?igsh=MTlvNmRmYXJ1aWdxZg%3D%3D&amp;utm_source=qr" rel="noopener noreferrer" target="_blank">@orichard.ti</a>
-<a data-whatsapp="" href="#">WhatsApp</a>
+<a href="https://www.instagram.com/orichard.ti?igsh=MTlvNmRmYXJ1aWdxZg%3D%3D&amp;utm_source=qr" rel="noopener noreferrer" target="_blank"><span class="footer-icon">◎</span>@orichard.ti</a>
+<a data-whatsapp="" href="#"><span class="footer-icon">◔</span>WhatsApp</a>
 </div>
 </div>
 </footer>
@@ -1502,6 +1594,27 @@
       link.target = "_blank";
       link.rel = "noopener noreferrer";
     });
+
+    const galleryToggle = document.getElementById("gallery-toggle");
+    const galleryExtra = document.getElementById("gallery-extra");
+
+    if (galleryToggle && galleryExtra) {
+      galleryToggle.addEventListener("click", () => {
+        const visible = galleryExtra.classList.toggle("is-visible");
+        galleryToggle.setAttribute("aria-expanded", String(visible));
+        galleryToggle.textContent = visible ? "Ocultar tela" : "Ver mais telas";
+      });
+    }
+
+    const floatingWhatsApp = document.querySelector(".floating-whatsapp");
+    const updateFloatingWhatsApp = () => {
+      if (!floatingWhatsApp) return;
+      floatingWhatsApp.classList.toggle("is-visible", window.scrollY > 260);
+    };
+
+    window.addEventListener("scroll", updateFloatingWhatsApp, { passive: true });
+    updateFloatingWhatsApp();
+
   </script>
 </body>
 </html>
